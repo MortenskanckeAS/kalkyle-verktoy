@@ -3,6 +3,7 @@ import {
   RedirectToSignIn,
   SignedIn,
   SignedOut,
+  SignIn,
 } from "@clerk/nextjs";
 import "./globals.css";
 
@@ -17,7 +18,7 @@ export default function RootLayout({
         <body>
           <SignedIn>{children}</SignedIn>
           <SignedOut>
-            <RedirectToSignIn redirectUrl="/sign-in" />
+            <RedirectToSignIn />
           </SignedOut>
         </body>
       </html>

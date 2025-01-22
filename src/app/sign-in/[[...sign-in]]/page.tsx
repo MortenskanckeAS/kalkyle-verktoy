@@ -3,9 +3,18 @@ import { SignIn } from "@clerk/nextjs";
 export default function SignInPage() {
   return (
     <div
-      style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+      }}
     >
-      <SignIn />
+      <SignIn
+        path="/sign-in"
+        routing="path"
+        fallbackRedirectUrl="/dashboard/calculation-tool"
+      />
     </div>
   );
 }
