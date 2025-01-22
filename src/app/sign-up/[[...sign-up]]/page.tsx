@@ -5,7 +5,11 @@ export default function SignUpPage() {
     <div
       style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}
     >
-      <SignUp />
+      <SignUp
+        path="/sign-up"
+        routing="path"
+        fallbackRedirectUrl="/dashboard/calculation-tool"
+      />
     </div>
   );
 }
