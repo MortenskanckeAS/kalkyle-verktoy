@@ -5,6 +5,7 @@ import {
   SignedOut,
 } from "@clerk/nextjs";
 import "./globals.css";
+import SignInPage from "./sign-in/[[...sign-in]]/page";
 
 export default function RootLayout({
   children,
@@ -17,7 +18,7 @@ export default function RootLayout({
         <body>
           <SignedIn>{children}</SignedIn>
           <SignedOut>
-            <RedirectToSignIn />
+            <SignInPage />
           </SignedOut>
         </body>
       </html>
