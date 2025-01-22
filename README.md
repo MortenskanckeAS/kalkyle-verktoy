@@ -9,6 +9,7 @@ First, install the necessary dependencies:
 ```bash
 pnpm install
 ```
+
 Then, run the development server:
 
 ```bash
