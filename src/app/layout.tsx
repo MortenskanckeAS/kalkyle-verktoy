@@ -3,7 +3,6 @@ import {
   RedirectToSignIn,
   SignedIn,
   SignedOut,
-  SignIn,
 } from "@clerk/nextjs";
 import "./globals.css";
 
