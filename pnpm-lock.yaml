@@ -8,6 +8,9 @@ dependencies:
   '@clerk/nextjs':
     specifier: ^6.9.15
     version: 6.9.15(next@15.1.5)(react-dom@19.0.0)(react@19.0.0)
+  '@clerk/themes':
+    specifier: ^2.2.11
+    version: 2.2.11
   '@radix-ui/react-label':
     specifier: ^2.1.1
     version: 2.1.1(@types/react-dom@19.0.3)(@types/react@19.0.7)(react-dom@19.0.0)(react@19.0.0)
@@ -148,8 +151,23 @@ packages:
       swr: 2.3.0(react@19.0.0)
     dev: false
 
+  /@clerk/themes@2.2.11:
+    resolution: {integrity: sha512-CU4jmVnJT3tP638Hn+EVtwgBAKbczQqA1OKl+SN1X8pdQ0eml3qhdI9nxKdFyFiuVo50NHABly4poRldJtOf8Q==}
+    engines: {node: '>=18.17.0'}
+    dependencies:
+      '@clerk/types': 4.43.0
+      tslib: 2.4.1
+    dev: false
+
   /@clerk/types@4.41.2:
     resolution: {integrity: sha512-8hvNzyeSa2sENQ86jHXTSnGKfhr9OHcIcm4w7bU4pAhCqF2aLYi9AZGNY4nvBcS3zPw1e8OLMiRKi5qhZrdt+g==}
+    engines: {node: '>=18.17.0'}
+    dependencies:
+      csstype: 3.1.1
+    dev: false
+
+  /@clerk/types@4.43.0:
+    resolution: {integrity: sha512-1xjZykuGnOAI1mlj+qI9g8BiadakXbi9pSWLN2xDD1WpXmZjwGcP7ZR4ShUE/ps/cV0vH16lUF1z2rn84rMKrA==}
     engines: {node: '>=18.17.0'}
     dependencies:
       csstype: 3.1.1

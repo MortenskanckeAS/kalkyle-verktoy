@@ -3,9 +3,9 @@ import {
   RedirectToSignIn,
   SignedIn,
   SignedOut,
+  UserButton,
 } from "@clerk/nextjs";
 import "./globals.css";
-import SignInPage from "./sign-in/[[...sign-in]]/page";
 
 export default function RootLayout({
   children,
@@ -16,10 +16,15 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body>
-          <SignedIn>{children}</SignedIn>
-          <SignedOut>
-            <SignInPage />
-          </SignedOut>
+          <header>
+            <SignedOut>
+              <RedirectToSignIn />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </header>
+          <main>{children}</main>
         </body>
       </html>
     </ClerkProvider>
