@@ -32,3 +32,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Vercel
 
 This application is deployed using Vercel. Every push to the main branch automatically triggers a production deployment.
+
+## Clerk
+
+For authentication and user management the project uses Clerk. Read more about Clerk here: https://clerk.com/
+
+## Supabase 
+
+For its postgres database, this application uses Supabase. Read more about it here: https://supabase.com/
+
+## Shadcn/UI
+
+This project uses Shadcn/UI as its component library. Read more about it here: https://ui.shadcn.com/
