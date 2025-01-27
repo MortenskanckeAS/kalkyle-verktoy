@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "gen:types": "supabase gen types typescript --project-id yivlfcxjbhwagsxksmtu > src/types/supabase-types.ts"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.9.15",
@@ -14,6 +15,8 @@
     "@radix-ui/react-label": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.1",
     "@supabase/supabase-js": "^2.48.0",
+    "@tanstack/react-query": "^5.64.2",
+    "@tanstack/react-query-devtools": "^5.64.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.473.0",
@@ -31,6 +34,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.5",
     "postcss": "^8",
+    "supabase": "^2.6.8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
