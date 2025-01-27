@@ -58,7 +58,7 @@ export default function CalculationTool() {
               document={<OfferPDF offer={offer} />}
               fileName={`offer-${offer.id}.pdf`}
             >
-              {/*@ts-expect-error*/}
+              {/*@ts-expect-error: issue within the react-pdf package that triggers ts error*/}
               {({ loading }: BlobProviderParams) =>
                 loading ? "Loading..." : "Download PDF"
               }
